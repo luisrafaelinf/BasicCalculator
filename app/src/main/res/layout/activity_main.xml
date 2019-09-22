@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	<TextView
+		android:id="@+id/titulo"
+		android:layout_width="265dp"
+		android:layout_height="26dp"
+		android:text="Mi Calculadora, SOLO SUMA"
+		android:textAlignment="center"
+		android:textSize="18sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.042" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="19dp"
+		android:layout_marginTop="97dp"
+		android:layout_marginEnd="324dp"
+		android:text="Resultado:"
+		android:textStyle="bold"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/resultado"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="96dp"
+		android:layout_marginTop="96dp"
+		android:layout_marginEnd="290dp"
+		android:text="N/A"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<com.google.android.material.textfield.TextInputLayout
+		android:layout_width="333dp"
+		android:layout_height="59dp"
+		android:layout_marginStart="19dp"
+		android:layout_marginTop="123dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<com.google.android.material.textfield.TextInputEditText
+			android:id="@+id/primerValor"
+			android:layout_width="279dp"
+			android:layout_height="wrap_content"
+			android:hint="Primer valor"
+			android:inputType="number|numberDecimal" />
+	</com.google.android.material.textfield.TextInputLayout>
+
+	<com.google.android.material.textfield.TextInputLayout
+		android:layout_width="332dp"
+		android:layout_height="59dp"
+		android:layout_marginStart="19dp"
+		android:layout_marginTop="190dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<com.google.android.material.textfield.TextInputEditText
+			android:id="@+id/segundoValor"
+			android:layout_width="279dp"
+			android:layout_height="47dp"
+			android:hint="Segundo valor"
+			android:inputType="numberDecimal" />
+	</com.google.android.material.textfield.TextInputLayout>
+
+	<Button
+		android:id="@+id/btnSumar"
+		android:layout_width="248dp"
+		android:layout_height="51dp"
+		android:layout_marginStart="84dp"
+		android:layout_marginTop="284dp"
+		android:text="Sumar"
+		android:background="@color/colorGreen"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+	/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
